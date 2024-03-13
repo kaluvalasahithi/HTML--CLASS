@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F6</title>
+  </head>
+  <body>
+    <form align="center" style="border: 2px; border-color: black">
+      <h4>Your basic info</h4>
+
+      Name:
+      <br />
+      <input type="text" />
+      <br />
+      E-mail:
+      <br />
+      <input type="email" />
+      <br />
+      Password:
+      <br />
+      <input
+        type="password"
+        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+        class="form-control"
+        placeholder="Email*"
+        id="email"
+        required=""
+      />
+      <br />
+
+      Age:
+      <br />
+
+      <input type="radio" name="age" value="16" />
+      under 16
+      <br />
+      <input type="radio" name="age" value="17" />
+      16 or older
+
+      <h4>Your Profile</h4>
+
+      Biography:
+      <br />
+
+      <textarea name="" id="" cols="30" rows="3"></textarea>
+      <br />
+      Courses:
+      <br />
+      <select name="Courses" id="">
+        <option value="" disabled selected>please select</option>
+        <option value="cse">computer science and Engineering</option>
+        <option value="ece">electronical science and Engineering</option>
+        <option value="eee">eee</option>
+        <option value="mech">mech</option>
+        <option value="civil">civil</option>
+      </select>
+      <br />
+
+      Interests:
+      <br />
+      <input type="checkbox" />Engineering
+      <br />
+      <input type="checkbox" />Business
+      <br />
+      <button
+        style="
+          color: white;
+          width: 300px;
+          background-color: rgb(10, 110, 121);
+          border: none;
+        "
+      >
+        SUBMIT
+      </button>
+    </form>
+  </body>
+</html>
